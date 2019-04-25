@@ -1,0 +1,998 @@
+/*------------------------------------------------------------------------------
+  General table styling
+------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------
+  Tab navigation
+------------------------------------------------------------------------------*/
+/* line 30, ../../../sass/vendors/woocommerce/helper.scss */
+.wc-helper .nav-tab-wrapper {
+  margin-bottom: 22px;
+}
+@media only screen and (max-width: 784px) {
+  /* line 34, ../../../sass/vendors/woocommerce/helper.scss */
+  .wc-helper .nav-tab {
+    max-width: 40%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+/*------------------------------------------------------------------------------
+  Buttons
+------------------------------------------------------------------------------*/
+/* line 48, ../../../sass/vendors/woocommerce/helper.scss */
+.wc-helper .button, .wc-helper .button:hover, .wc-helper .button:focus, .wc-helper .button:active {
+  background-color: #955a89;
+  border-width: 0;
+  box-shadow: none;
+  border-radius: 3px;
+  color: #fff;
+  height: auto;
+  padding: 3px 14px;
+  text-align: center;
+  white-space: normal !important;
+}
+@media only screen and (max-width: 782px) {
+  /* line 48, ../../../sass/vendors/woocommerce/helper.scss */
+  .wc-helper .button, .wc-helper .button:hover, .wc-helper .button:focus, .wc-helper .button:active {
+    line-height: 2;
+  }
+}
+/* line 63, ../../../sass/vendors/woocommerce/helper.scss */
+.wc-helper .button.button-secondary, .wc-helper .button:hover.button-secondary, .wc-helper .button:focus.button-secondary, .wc-helper .button:active.button-secondary {
+  background-color: #e6e6e6;
+  color: #3c3c3c;
+  text-shadow: none;
+}
+/* line 70, ../../../sass/vendors/woocommerce/helper.scss */
+.wc-helper .button:hover {
+  opacity: 0.8;
+}
+
+/* line 75, ../../../sass/vendors/woocommerce/helper.scss */
+.wc-helper .subscription-filter {
+  color: #2E4453;
+  font-size: 13px;
+  line-height: 13px;
+  margin: 22px 0;
+}
+/* line 81, ../../../sass/vendors/woocommerce/helper.scss */
+.wc-helper .subscription-filter label {
+  display: none;
+  position: relative;
+}
+/* line 85, ../../../sass/vendors/woocommerce/helper.scss */
+.wc-helper .subscription-filter label .chevron {
+  color: #E1E1E1;
+  border-bottom-width: 0;
+  line-height: 1;
+  padding: 0;
+  position: absolute;
+  top: 12px;
+  right: 12px;
+}
+/* line 96, ../../../sass/vendors/woocommerce/helper.scss */
+.wc-helper .subscription-filter span {
+  font-weight: bold;
+  padding-right: 4px;
+}
+/* line 101, ../../../sass/vendors/woocommerce/helper.scss */
+.wc-helper .subscription-filter a {
+  color: #0073AA;
+  display: inline-block;
+  padding: 0 4px 0 8px;
+  position: relative;
+  text-decoration: none;
+}
+/* line 108, ../../../sass/vendors/woocommerce/helper.scss */
+.wc-helper .subscription-filter a:before {
+  background-color: #979797;
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 1px;
+}
+@media only screen and (max-width: 600px) {
+  /* line 75, ../../../sass/vendors/woocommerce/helper.scss */
+  .wc-helper .subscription-filter {
+    background-color: #fff;
+    border: 1px solid #E1E1E1;
+    border-radius: 2px;
+    font-size: 14px;
+  }
+  /* line 125, ../../../sass/vendors/woocommerce/helper.scss */
+  .wc-helper .subscription-filter label,
+  .wc-helper .subscription-filter span,
+  .wc-helper .subscription-filter a {
+    border-bottom: 1px solid #E1E1E1;
+    line-height: 2;
+    padding: 8px 16px;
+    margin: 0;
+  }
+  /* line 134, ../../../sass/vendors/woocommerce/helper.scss */
+  .wc-helper .subscription-filter label,
+  .wc-helper .subscription-filter span.chevron {
+    display: block;
+  }
+  /* line 139, ../../../sass/vendors/woocommerce/helper.scss */
+  .wc-helper .subscription-filter span,
+  .wc-helper .subscription-filter a {
+    display: none;
+  }
+  /* line 144, ../../../sass/vendors/woocommerce/helper.scss */
+  .wc-helper .subscription-filter a {
+    cursor: pointer;
+  }
+  /* line 147, ../../../sass/vendors/woocommerce/helper.scss */
+  .wc-helper .subscription-filter a::before {
+    display: none;
+  }
+  /* line 152, ../../../sass/vendors/woocommerce/helper.scss */
+  .wc-helper .subscription-filter span.chevron {
+    transform: rotateX(0deg);
+  }
+  /* line 158, ../../../sass/vendors/woocommerce/helper.scss */
+  .wc-helper .subscription-filter:focus span,
+  .wc-helper .subscription-filter:focus a, .wc-helper .subscription-filter:hover span,
+  .wc-helper .subscription-filter:hover a {
+    display: block;
+  }
+  /* line 163, ../../../sass/vendors/woocommerce/helper.scss */
+  .wc-helper .subscription-filter:focus span.chevron, .wc-helper .subscription-filter:hover span.chevron {
+    transform: rotateX(0deg);
+  }
+}
+
+/*------------------------------------------------------------------------------
+  Subscriptons Header
+------------------------------------------------------------------------------*/
+/* line 176, ../../../sass/vendors/woocommerce/helper.scss */
+.wc-helper .subscriptions-header {
+  margin: 3em 0 0;
+  position: relative;
+  z-index: 10;
+}
+/* line 181, ../../../sass/vendors/woocommerce/helper.scss */
+.wc-helper .subscriptions-header h2 {
+  display: inline-block;
+  line-height: 25px;
+  margin: 0 0 1.5em 0;
+}
+/* line 188, ../../../sass/vendors/woocommerce/helper.scss */
+.wc-helper .button-update, .wc-helper .button-update:hover {
+  background-color: #E6E6E6;
+  border-radius: 4px;
+  color: #333;
+  font-weight: 800;
+  font-size: 10px;
+  line-height: 20px;
+  margin-left: 6px;
+  opacity: 0.75;
+  padding: 3px 7px;
+  text-transform: uppercase;
+}
+/* line 200, ../../../sass/vendors/woocommerce/helper.scss */
+.wc-helper .button-update .dashicons, .wc-helper .button-update:hover .dashicons {
+  font-size: 12px;
+  height: 12px;
+  width: 12px;
+  vertical-align: text-bottom;
+}
+/* line 208, ../../../sass/vendors/woocommerce/helper.scss */
+.wc-helper .button-update:hover {
+  opacity: 1;
+}
+/* line 212, ../../../sass/vendors/woocommerce/helper.scss */
+.wc-helper .user-info {
+  background-color: #fff;
+  border: 1px solid #E1E1E1;
+  border-radius: 4px;
+  font-size: 12px;
+  line-height: 26px;
+  position: absolute;
+  top: -10px;
+  right: 0;
+  transition: all .1s ease-in;
+}
+@media only screen and (max-width: 600px) {
+  /* line 212, ../../../sass/vendors/woocommerce/helper.scss */
+  .wc-helper .user-info {
+    position: relative;
+    width: 100%;
+  }
+}
+/* line 228, ../../../sass/vendors/woocommerce/helper.scss */
+.wc-helper .user-info p {
+  line-height: 26px;
+  margin: 0;
+}
+/* line 233, ../../../sass/vendors/woocommerce/helper.scss */
+.wc-helper .user-info:hover {
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+/* line 237, ../../../sass/vendors/woocommerce/helper.scss */
+.wc-helper .user-info header {
+  color: #555555;
+  font-weight: 600;
+  padding: 6px 14px;
+  position: relative;
+}
+/* line 243, ../../../sass/vendors/woocommerce/helper.scss */
+.wc-helper .user-info header p {
+  padding-right: 26px;
+}
+/* line 247, ../../../sass/vendors/woocommerce/helper.scss */
+.wc-helper .user-info header .dashicons {
+  opacity: 0.5;
+  position: absolute;
+  top: 9px;
+  right: 14px;
+}
+/* line 254, ../../../sass/vendors/woocommerce/helper.scss */
+.wc-helper .user-info header:hover {
+  cursor: pointer;
+}
+/* line 259, ../../../sass/vendors/woocommerce/helper.scss */
+.wc-helper .user-info section {
+  display: none;
+}
+/* line 262, ../../../sass/vendors/woocommerce/helper.scss */
+.wc-helper .user-info section p {
+  border-top: 1px solid #E1E1E1;
+  padding: 6px 14px;
+  text-align: center;
+}
+/* line 268, ../../../sass/vendors/woocommerce/helper.scss */
+.wc-helper .user-info section .actions {
+  border-top: 1px solid #E1E1E1;
+  display: flex;
+}
+/* line 273, ../../../sass/vendors/woocommerce/helper.scss */
+.wc-helper .user-info section a {
+  color: #A26897;
+  cursor: pointer;
+  font-weight: 600;
+  line-height: 38px;
+  padding: 0 14px;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  width: 50%;
+}
+/* line 284, ../../../sass/vendors/woocommerce/helper.scss */
+.wc-helper .user-info section a .dashicons {
+  margin-top: -3px;
+  vertical-align: middle;
+}
+/* line 289, ../../../sass/vendors/woocommerce/helper.scss */
+.wc-helper .user-info section a:first-child {
+  border-right: 1px solid #E1E1E1;
+}
+/* line 293, ../../../sass/vendors/woocommerce/helper.scss */
+.wc-helper .user-info section a:hover {
+  background-color: #A26897;
+  color: #fff;
+}
+/* line 299, ../../../sass/vendors/woocommerce/helper.scss */
+.wc-helper .user-info section .avatar {
+  border: 1px solid #ECE1EA;
+  border-radius: 50%;
+  height: auto;
+  margin-right: 6px;
+  width: 24px;
+  vertical-align: bottom;
+}
+/* line 313, ../../../sass/vendors/woocommerce/helper.scss */
+.wc-helper .user-info:hover header .dashicons,
+.wc-helper .user-info:focus header .dashicons,
+.wc-helper .user-info:active header .dashicons {
+  transform: rotateX(180deg);
+}
+/* line 316, ../../../sass/vendors/woocommerce/helper.scss */
+.wc-helper .user-info:hover section,
+.wc-helper .user-info:focus section,
+.wc-helper .user-info:active section {
+  display: block;
+}
+
+/*------------------------------------------------------------------------------
+  Subscripton table
+------------------------------------------------------------------------------*/
+/* line 327, ../../../sass/vendors/woocommerce/helper.scss */
+.wc-helper .striped > tbody > :nth-child(odd),
+.wc-helper ul.striped > :nth-child(odd),
+.wc-helper .alternate {
+  background-color: #ffffff;
+}
+/* line 333, ../../../sass/vendors/woocommerce/helper.scss */
+.wc-helper table.widefat,
+.wc-helper .wp-editor-container,
+.wc-helper .stuffbox,
+.wc-helper p.popular-tags,
+.wc-helper .widgets-holder-wrap,
+.wc-helper .popular-tags,
+.wc-helper .feature-filter,
+.wc-helper .imgedit-group,
+.wc-helper .comment-ays {
+  padding-top: 5px;
+}
+/* line 345, ../../../sass/vendors/woocommerce/helper.scss */
+.wc-helper .widefat thead tr th,
+.wc-helper .widefat thead tr td,
+.wc-helper .widefat tfoot tr th,
+.wc-helper .widefat tfoot tr td {
+  color: #32373c;
+  padding-bottom: 15px;
+  padding-top: 10px;
+}
+/* line 354, ../../../sass/vendors/woocommerce/helper.scss */
+.wc-helper .widefat td {
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+/* line 359, ../../../sass/vendors/woocommerce/helper.scss */
+.wc-helper .wp-list-table {
+  border: 0;
+  box-shadow: none;
+  padding-top: 0 !important;
+  z-index: 1;
+}
+@media only screen and (max-width: 782px) {
+  /* line 366, ../../../sass/vendors/woocommerce/helper.scss */
+  .wc-helper .button {
+    font-size: 11px;
+  }
+}
+/* line 372, ../../../sass/vendors/woocommerce/helper.scss */
+.wc-helper .wp-list-table__row {
+  background-color: transparent;
+}
+/* line 375, ../../../sass/vendors/woocommerce/helper.scss */
+.wc-helper .wp-list-table__row td {
+  align-items: center;
+  background-color: #fff;
+  border: 0px;
+  padding: 16px 22px;
+  vertical-align: middle;
+}
+@media only screen and (max-width: 782px) {
+  /* line 375, ../../../sass/vendors/woocommerce/helper.scss */
+  .wc-helper .wp-list-table__row td {
+    padding: 16px;
+  }
+}
+/* line 388, ../../../sass/vendors/woocommerce/helper.scss */
+.wc-helper .wp-list-table__row td.color-bar {
+  border-left: 0;
+}
+/* line 394, ../../../sass/vendors/woocommerce/helper.scss */
+.wc-helper .wp-list-table__row.is-ext-header td {
+  border-top: 1px solid #E1E1E1;
+}
+@media only screen and (max-width: 782px) {
+  /* line 392, ../../../sass/vendors/woocommerce/helper.scss */
+  .wc-helper .wp-list-table__row.is-ext-header {
+    display: inline-flex;
+    flex-flow: row wrap;
+    width: 100%;
+  }
+  /* line 403, ../../../sass/vendors/woocommerce/helper.scss */
+  .wc-helper .wp-list-table__row.is-ext-header .wp-list-table__ext-details {
+    display: block;
+    flex: 2;
+  }
+  /* line 407, ../../../sass/vendors/woocommerce/helper.scss */
+  .wc-helper .wp-list-table__row.is-ext-header .wp-list-table__ext-actions {
+    display: block;
+    flex: 1;
+    min-width: 0;
+  }
+}
+/* line 415, ../../../sass/vendors/woocommerce/helper.scss */
+.wc-helper .wp-list-table__row:last-child td {
+  border-bottom: 24px solid #F1F1F1;
+  box-shadow: inset 0 -1px 0 #E1E1E1;
+}
+/* line 421, ../../../sass/vendors/woocommerce/helper.scss */
+.wc-helper .wp-list-table__ext-details,
+.wc-helper .wp-list-table__ext-status,
+.wc-helper .wp-list-table__licence-container {
+  padding-right: 22px;
+  position: relative;
+  width: 100%;
+}
+/* line 428, ../../../sass/vendors/woocommerce/helper.scss */
+.wc-helper .wp-list-table__ext-details::before,
+.wc-helper .wp-list-table__ext-status::before,
+.wc-helper .wp-list-table__licence-container::before {
+  background-color: #E1E1E1;
+  content: " ";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0 !important;
+  width: 1px !important;
+}
+/* line 439, ../../../sass/vendors/woocommerce/helper.scss */
+.wc-helper .wp-list-table__ext-details {
+  display: flex;
+}
+@media only screen and (max-width: 782px) {
+  /* line 439, ../../../sass/vendors/woocommerce/helper.scss */
+  .wc-helper .wp-list-table__ext-details {
+    display: table;
+  }
+}
+/* line 447, ../../../sass/vendors/woocommerce/helper.scss */
+.wc-helper .wp-list-table__ext-title {
+  color: #0073AA;
+  font-size: 18px;
+  font-weight: 784;
+  width: 60%;
+}
+@media only screen and (max-width: 782px) {
+  /* line 447, ../../../sass/vendors/woocommerce/helper.scss */
+  .wc-helper .wp-list-table__ext-title {
+    margin-bottom: 12px;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 320px) {
+  /* line 447, ../../../sass/vendors/woocommerce/helper.scss */
+  .wc-helper .wp-list-table__ext-title {
+    max-width: 120px;
+  }
+}
+/* line 462, ../../../sass/vendors/woocommerce/helper.scss */
+.wc-helper .wp-list-table__ext-description {
+  color: #333;
+  padding-left: 12px;
+  width: 40%;
+}
+@media only screen and (max-width: 782px) {
+  /* line 462, ../../../sass/vendors/woocommerce/helper.scss */
+  .wc-helper .wp-list-table__ext-description {
+    padding-left: 0;
+    width: 100%;
+  }
+}
+/* line 472, ../../../sass/vendors/woocommerce/helper.scss */
+.wc-helper .wp-list-table__ext-status {
+  position: relative;
+}
+/* line 475, ../../../sass/vendors/woocommerce/helper.scss */
+.wc-helper .wp-list-table__ext-status.update-available:after {
+  background-color: #FFC322;
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 5px;
+}
+/* line 485, ../../../sass/vendors/woocommerce/helper.scss */
+.wc-helper .wp-list-table__ext-status.expired:after {
+  background-color: #B81C23;
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 5px;
+}
+/* line 495, ../../../sass/vendors/woocommerce/helper.scss */
+.wc-helper .wp-list-table__ext-status .dashicons-update {
+  color: #FFC322;
+}
+/* line 499, ../../../sass/vendors/woocommerce/helper.scss */
+.wc-helper .wp-list-table__ext-status .dashicons-info {
+  color: #B81C23;
+}
+/* line 503, ../../../sass/vendors/woocommerce/helper.scss */
+.wc-helper .wp-list-table__ext-status p {
+  color: #333333;
+  margin: 0;
+}
+/* line 508, ../../../sass/vendors/woocommerce/helper.scss */
+.wc-helper .wp-list-table__ext-status .dashicons {
+  margin-right: 5px;
+}
+/* line 513, ../../../sass/vendors/woocommerce/helper.scss */
+.wc-helper .wp-list-table__ext-actions {
+  min-width: 150px;
+  position: relative;
+  width: 25%;
+  text-align: right;
+}
+/* line 519, ../../../sass/vendors/woocommerce/helper.scss */
+.wc-helper .wp-list-table__ext-actions::after {
+  background-color: #E1E1E1;
+  content: " ";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 1px;
+}
+/* line 532, ../../../sass/vendors/woocommerce/helper.scss */
+.wc-helper .wp-list-table__ext-updates td,
+.wc-helper .wp-list-table__ext-licence td {
+  position: relative;
+}
+/* line 535, ../../../sass/vendors/woocommerce/helper.scss */
+.wc-helper .wp-list-table__ext-updates td:before,
+.wc-helper .wp-list-table__ext-licence td:before {
+  background-color: #E1E1E1;
+  content: " ";
+  height: 1px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+/* line 548, ../../../sass/vendors/woocommerce/helper.scss */
+.wc-helper .wp-list-table__ext-updates td.wp-list-table__ext-status:before,
+.wc-helper .wp-list-table__ext-updates td.wp-list-table__licence-container:before,
+.wc-helper .wp-list-table__ext-licence td.wp-list-table__ext-status:before,
+.wc-helper .wp-list-table__ext-licence td.wp-list-table__licence-container:before {
+  left: 22px !important;
+  width: auto !important;
+}
+/* line 554, ../../../sass/vendors/woocommerce/helper.scss */
+.wc-helper .wp-list-table__ext-updates td.wp-list-table__ext-actions:before,
+.wc-helper .wp-list-table__ext-licence td.wp-list-table__ext-actions:before {
+  right: 22px;
+}
+@media only screen and (max-width: 782px) {
+  /* line 530, ../../../sass/vendors/woocommerce/helper.scss */
+  .wc-helper .wp-list-table__ext-updates,
+  .wc-helper .wp-list-table__ext-licence {
+    display: flex;
+  }
+  /* line 561, ../../../sass/vendors/woocommerce/helper.scss */
+  .wc-helper .wp-list-table__ext-updates .wp-list-table__ext-status,
+  .wc-helper .wp-list-table__ext-licence .wp-list-table__ext-status {
+    flex: 2;
+  }
+  /* line 564, ../../../sass/vendors/woocommerce/helper.scss */
+  .wc-helper .wp-list-table__ext-updates .wp-list-table__ext-status::before,
+  .wc-helper .wp-list-table__ext-licence .wp-list-table__ext-status::before {
+    left: 0 !important;
+    width: 100% !important;
+  }
+  /* line 570, ../../../sass/vendors/woocommerce/helper.scss */
+  .wc-helper .wp-list-table__ext-updates .wp-list-table__ext-actions,
+  .wc-helper .wp-list-table__ext-licence .wp-list-table__ext-actions {
+    flex: 1;
+    min-width: 0;
+  }
+  /* line 574, ../../../sass/vendors/woocommerce/helper.scss */
+  .wc-helper .wp-list-table__ext-updates .wp-list-table__ext-actions::before,
+  .wc-helper .wp-list-table__ext-licence .wp-list-table__ext-actions::before {
+    left: 0  !important;
+    right: 0  !important;
+    width: 100%  !important;
+  }
+}
+/* line 583, ../../../sass/vendors/woocommerce/helper.scss */
+.wc-helper .wp-list-table__licence-container {
+  padding: 0 !important;
+}
+/* line 586, ../../../sass/vendors/woocommerce/helper.scss */
+.wc-helper .wp-list-table__licence-container::after {
+  background-color: #E1E1E1;
+  content: " ";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 1px;
+}
+/* line 597, ../../../sass/vendors/woocommerce/helper.scss */
+.wc-helper .wp-list-table__licence-form {
+  display: flex;
+  padding: 16px 22px;
+}
+@media only screen and (max-width: 782px) {
+  /* line 597, ../../../sass/vendors/woocommerce/helper.scss */
+  .wc-helper .wp-list-table__licence-form {
+    display: block;
+  }
+}
+/* line 605, ../../../sass/vendors/woocommerce/helper.scss */
+.wc-helper .wp-list-table__licence-form::before {
+  background-color: #E1E1E1;
+  content: " ";
+  height: 1px;
+  position: absolute;
+  top: 0;
+  right: 22px;
+  left: 22px;
+}
+@media only screen and (max-width: 782px) {
+  /* line 605, ../../../sass/vendors/woocommerce/helper.scss */
+  .wc-helper .wp-list-table__licence-form::before {
+    right: 0;
+    left: 0;
+  }
+}
+/* line 620, ../../../sass/vendors/woocommerce/helper.scss */
+.wc-helper .wp-list-table__licence-form div {
+  padding-right: 16px;
+  vertical-align: middle;
+}
+@media only screen and (max-width: 782px) {
+  /* line 620, ../../../sass/vendors/woocommerce/helper.scss */
+  .wc-helper .wp-list-table__licence-form div {
+    padding: 0;
+  }
+}
+/* line 629, ../../../sass/vendors/woocommerce/helper.scss */
+.wc-helper .wp-list-table__licence-form p {
+  margin: 0 !important;
+}
+/* line 635, ../../../sass/vendors/woocommerce/helper.scss */
+.wc-helper .wp-list-table__licence-label label {
+  color: #23282d;
+  font-weight: 600;
+  line-height: 30px;
+}
+/* line 643, ../../../sass/vendors/woocommerce/helper.scss */
+.wc-helper .wp-list-table__licence-field input {
+  height: 32px;
+}
+@media only screen and (max-width: 480px) {
+  /* line 643, ../../../sass/vendors/woocommerce/helper.scss */
+  .wc-helper .wp-list-table__licence-field input {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 782px) {
+  /* line 642, ../../../sass/vendors/woocommerce/helper.scss */
+  .wc-helper .wp-list-table__licence-field {
+    padding: 8px 0 16px !important;
+  }
+}
+/* line 656, ../../../sass/vendors/woocommerce/helper.scss */
+.wc-helper .wp-list-table__licence-actions {
+  flex-grow: 2;
+  padding-right: 0 !important;
+}
+/* line 660, ../../../sass/vendors/woocommerce/helper.scss */
+.wc-helper .wp-list-table__licence-actions .button {
+  margin-right: 8px;
+}
+/* line 663, ../../../sass/vendors/woocommerce/helper.scss */
+.wc-helper .wp-list-table__licence-actions .button-secondary {
+  float: right;
+  margin: 0 0 0 8px;
+}
+@media only screen and (max-width: 480px) {
+  /* line 656, ../../../sass/vendors/woocommerce/helper.scss */
+  .wc-helper .wp-list-table__licence-actions {
+    text-align: right;
+  }
+}
+
+/*------------------------------------------------------------------------------
+  Expired notification bar
+------------------------------------------------------------------------------*/
+/* line 679, ../../../sass/vendors/woocommerce/helper.scss */
+.wc-helper td.color-bar {
+  border-left: solid 4px transparent;
+}
+/* line 683, ../../../sass/vendors/woocommerce/helper.scss */
+.wc-helper td.color-bar.expired {
+  border-left-color: #B81C23;
+}
+/* line 687, ../../../sass/vendors/woocommerce/helper.scss */
+.wc-helper td.color-bar.expiring {
+  border-left-color: orange;
+}
+/* line 691, ../../../sass/vendors/woocommerce/helper.scss */
+.wc-helper td.color-bar.update-available {
+  border-left-color: #8FAE1B;
+}
+/* line 695, ../../../sass/vendors/woocommerce/helper.scss */
+.wc-helper td.color-bar.expiring.update-available {
+  border-left-color: #8FAE1B;
+}
+
+/*------------------------------------------------------------------------------
+  Connected account table
+------------------------------------------------------------------------------*/
+/* line 705, ../../../sass/vendors/woocommerce/helper.scss */
+.wc-helper .connect-wrapper {
+  background-color: #fff;
+  border: 1px solid #e5e5e5;
+  margin-bottom: 25px;
+  overflow: auto;
+}
+/* line 712, ../../../sass/vendors/woocommerce/helper.scss */
+.wc-helper .connected {
+  display: flex;
+}
+/* line 715, ../../../sass/vendors/woocommerce/helper.scss */
+.wc-helper .connected .user-info {
+  display: flex;
+  padding: 20px;
+  width: 100%;
+  vertical-align: middle;
+}
+/* line 722, ../../../sass/vendors/woocommerce/helper.scss */
+.wc-helper .connected img {
+  border: 1px solid #e5e5e5;
+  height: 34px;
+  width: 34px;
+}
+/* line 728, ../../../sass/vendors/woocommerce/helper.scss */
+.wc-helper .connected .buttons {
+  padding: 20px;
+  white-space: nowrap;
+}
+/* line 733, ../../../sass/vendors/woocommerce/helper.scss */
+.wc-helper .connected p {
+  flex: 2;
+  margin: 10px 0 0 20px;
+}
+/* line 738, ../../../sass/vendors/woocommerce/helper.scss */
+.wc-helper .connected .chevron {
+  display: none;
+}
+/* line 741, ../../../sass/vendors/woocommerce/helper.scss */
+.wc-helper .connected .chevron:hover {
+  color: #955a89;
+  cursor: pointer;
+}
+@media only screen and (max-width: 784px) {
+  /* line 712, ../../../sass/vendors/woocommerce/helper.scss */
+  .wc-helper .connected {
+    display: block;
+  }
+  /* line 750, ../../../sass/vendors/woocommerce/helper.scss */
+  .wc-helper .connected strong {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  /* line 756, ../../../sass/vendors/woocommerce/helper.scss */
+  .wc-helper .connected p {
+    margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 80%;
+  }
+  /* line 763, ../../../sass/vendors/woocommerce/helper.scss */
+  .wc-helper .connected .user-info {
+    padding-right: 0;
+    width: auto;
+  }
+  /* line 768, ../../../sass/vendors/woocommerce/helper.scss */
+  .wc-helper .connected .avatar {
+    margin-right: 12px;
+  }
+  /* line 772, ../../../sass/vendors/woocommerce/helper.scss */
+  .wc-helper .connected .chevron {
+    color: #E1E1E1;
+    display: block;
+    margin: 10px;
+    transform: rotateX(0deg);
+  }
+  /* line 779, ../../../sass/vendors/woocommerce/helper.scss */
+  .wc-helper .connected .buttons {
+    display: none;
+    border-top: 1px solid #E1E1E1;
+    padding: 10px 20px;
+  }
+  /* line 784, ../../../sass/vendors/woocommerce/helper.scss */
+  .wc-helper .connected .buttons.active {
+    display: block;
+  }
+}
+
+/*------------------------------------------------------------------------------
+  Initial connection screen
+------------------------------------------------------------------------------*/
+/* line 798, ../../../sass/vendors/woocommerce/helper.scss */
+.wc-helper .start-container {
+  background-color: #ffffff;
+  border-left: 4px solid #cc99c2;
+  padding: 45px 20px 20px 30px;
+  position: relative;
+  overflow: hidden;
+}
+/* line 805, ../../../sass/vendors/woocommerce/helper.scss */
+.wc-helper .start-container h2,
+.wc-helper .start-container p {
+  max-width: 800px;
+}
+/* line 811, ../../../sass/vendors/woocommerce/helper.scss */
+.wc-helper .start-container::before {
+  color: #eee2ec;
+  content: "\e01C";
+  display: block;
+  font-family: WooCommerce;
+  font-size: 192px;
+  line-height: 1;
+  position: absolute;
+  top: 65%;
+  right: -3%;
+  text-align: center;
+  width: 1em;
+}
+/* line 825, ../../../sass/vendors/woocommerce/helper.scss */
+.wc-helper .start-container h2 {
+  font-size: 24px;
+  line-height: 29px;
+  position: relative;
+}
+/* line 831, ../../../sass/vendors/woocommerce/helper.scss */
+.wc-helper .start-container p {
+  font-size: 16px;
+  margin-bottom: 30px;
+  position: relative;
+}
+/* line 837, ../../../sass/vendors/woocommerce/helper.scss */
+.wc-helper .button-primary {
+  height: 37px;
+  line-height: 37px;
+  min-width: 124px;
+  padding: 0 13px;
+}
+/* line 843, ../../../sass/vendors/woocommerce/helper.scss */
+.wc-helper .button-primary:hover, .wc-helper .button-primary:active, .wc-helper .button-primary:focus {
+  padding: 0 13px;
+}
+
+/* line 856, ../../../sass/vendors/woocommerce/helper.scss */
+.form-toggle__wrapper {
+  position: relative;
+}
+/* line 859, ../../../sass/vendors/woocommerce/helper.scss */
+.form-toggle__wrapper label {
+  cursor: default;
+}
+
+/* line 864, ../../../sass/vendors/woocommerce/helper.scss */
+.form-toggle {
+  cursor: pointer;
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  text-align: left;
+  text-indent: -100000px;
+  z-index: 2;
+}
+/* line 876, ../../../sass/vendors/woocommerce/helper.scss */
+.form-toggle:focus {
+  box-shadow: none;
+}
+/* line 880, ../../../sass/vendors/woocommerce/helper.scss */
+.form-toggle.disabled {
+  cursor: default;
+}
+
+/* line 885, ../../../sass/vendors/woocommerce/helper.scss */
+.form-toggle__switch {
+  align-self: flex-start;
+  background: #c8d7e1;
+  border-radius: 12px;
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 2px;
+  outline: 0;
+  position: relative;
+  width: 40px;
+  height: 24px;
+  transition: all .4s ease, box-shadow 0s;
+  vertical-align: middle;
+}
+/* line 899, ../../../sass/vendors/woocommerce/helper.scss */
+.form-toggle__switch:before, .form-toggle__switch:after {
+  content: "";
+  display: block;
+  position: relative;
+  width: 20px;
+  height: 20px;
+}
+/* line 908, ../../../sass/vendors/woocommerce/helper.scss */
+.form-toggle__switch:after {
+  border-radius: 50%;
+  background: #ffffff;
+  left: 0;
+  transition: all .2s ease;
+}
+/* line 915, ../../../sass/vendors/woocommerce/helper.scss */
+.form-toggle__switch:before {
+  display: none;
+}
+/* line 919, ../../../sass/vendors/woocommerce/helper.scss */
+.accessible-focus .form-toggle__switch:focus {
+  box-shadow: 0 0 0 2px #955a89;
+}
+
+/* line 926, ../../../sass/vendors/woocommerce/helper.scss */
+.form-toggle__label {
+  vertical-align: bottom;
+  z-index: 1;
+}
+/* line 930, ../../../sass/vendors/woocommerce/helper.scss */
+.form-toggle__label .form-toggle__label-content {
+  color: #87a6bc;
+  flex: 0 1 100%;
+  font-size: 13px;
+  line-height: 16px;
+  margin-left: 12px;
+  margin-right: 8px;
+  vertical-align: top;
+  text-transform: uppercase;
+}
+@media only screen and (max-width: 480px) {
+  /* line 930, ../../../sass/vendors/woocommerce/helper.scss */
+  .form-toggle__label .form-toggle__label-content {
+    display: none;
+  }
+}
+
+/* line 948, ../../../sass/vendors/woocommerce/helper.scss */
+.accessible-focus .form-toggle:focus + .form-toggle__label .form-toggle__switch {
+  box-shadow: 0 0 0 2px #955a89;
+}
+/* line 951, ../../../sass/vendors/woocommerce/helper.scss */
+.accessible-focus .form-toggle:focus:checked + .form-toggle__label .form-toggle__switch {
+  box-shadow: 0 0 0 2px #bb77ae;
+}
+/* line 956, ../../../sass/vendors/woocommerce/helper.scss */
+.form-toggle + .form-toggle__label .form-toggle__switch {
+  background: #a8bece;
+}
+/* line 961, ../../../sass/vendors/woocommerce/helper.scss */
+.form-toggle:not(:disabled) + .form-toggle__label:hover .form-toggle__switch {
+  background: #c8d7e1;
+}
+/* line 967, ../../../sass/vendors/woocommerce/helper.scss */
+.form-toggle.active + .form-toggle__label .form-toggle__switch {
+  background: #955a89;
+}
+/* line 970, ../../../sass/vendors/woocommerce/helper.scss */
+.form-toggle.active + .form-toggle__label .form-toggle__switch:after {
+  left: 8px;
+}
+/* line 975, ../../../sass/vendors/woocommerce/helper.scss */
+.form-toggle.active + .form-toggle__label:hover .form-toggle__switch {
+  background: #bb77ae;
+}
+/* line 981, ../../../sass/vendors/woocommerce/helper.scss */
+.form-toggle.disabled + label.form-toggle__label span.form-toggle__switch {
+  opacity: 0.25;
+}
+
+/* line 989, ../../../sass/vendors/woocommerce/helper.scss */
+.form-toggle.is-toggling + .form-toggle__label .form-toggle__switch {
+  background: #955a89;
+}
+/* line 993, ../../../sass/vendors/woocommerce/helper.scss */
+.form-toggle.is-toggling:checked + .form-toggle__label .form-toggle__switch {
+  background: #c8d7e1;
+}
+
+/* line 1000, ../../../sass/vendors/woocommerce/helper.scss */
+.form-toggle.is-compact + .form-toggle__label .form-toggle__switch {
+  border-radius: 8px;
+  width: 24px;
+  height: 16px;
+}
+/* line 1005, ../../../sass/vendors/woocommerce/helper.scss */
+.form-toggle.is-compact + .form-toggle__label .form-toggle__switch:before, .form-toggle.is-compact + .form-toggle__label .form-toggle__switch:after {
+  height: 12px;
+  width: 12px;
+}
+/* line 1013, ../../../sass/vendors/woocommerce/helper.scss */
+.form-toggle.is-compact:checked + .form-toggle__label .form-toggle__switch:after {
+  left: 8px;
+}

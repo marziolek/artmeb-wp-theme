@@ -1,0 +1,518 @@
+[
+  [
+    'name'=> 'ALFA',
+    'weight'=> '335 m/m²',
+    'composition'=> '51% PES 49% AKR',
+    'width'=> '145 cm',
+    'abrasion'=> '16,000',
+    'resistance'=> 'BD',
+    'colorFatness'=> '3-4',
+    'colorFatnessRubbing'=> 'na mokro/wet BD, na sucho/dry 4',
+    'certificate'=> 'BD'
+  ],
+
+  [
+    'name'=> 'CAMEL',
+    'weight'=> '300 m/m²',
+    'composition'=> '100% PES',
+    'width'=> '145 cm',
+    'abrasion'=> '12,000',
+    'resistance'=> 'BD',
+    'colorFatness'=> '3-4',
+    'colorFatnessRubbing'=> 'na mokro/wet BD, na sucho/dry 4',
+    'certificate'=> 'BD'
+  ],
+
+  [
+    'name'=> 'GOLF',
+    'weight'=> '420 m/m²',
+    'composition'=> '90% PES 10% NYL',
+    'width'=> '146 cm',
+    'abrasion'=> '35,000',
+    'resistance'=> 'BD',
+    'colorFatness'=> '6',
+    'colorFatnessRubbing'=> 'na mokro/wet BD, na sucho/dry 4',
+    'certificate'=> 'BD'
+  ],
+
+  [
+    'name'=> 'IMPERIAL',
+    'weight'=> '400 m/m²',
+    'composition'=> '100% PES',
+    'width'=> '145 cm',
+    'abrasion'=> '100,000',
+    'resistance'=> 'BD',
+    'colorFatness'=> '6',
+    'colorFatnessRubbing'=> 'na mokro/wet BD, na sucho/dry 4',
+    'certificate'=> 'BD'
+  ],
+
+  [
+    'name'=> 'MAGMA',
+    'weight'=> '380 m/m²',
+    'composition'=> '100% PES',
+    'width'=> '145 cm',
+    'abrasion'=> '18,000',
+    'resistance'=> 'BD',
+    'colorFatness'=> '3-4',
+    'colorFatnessRubbing'=> 'na mokro/wet BD, na sucho/dry 4',
+    'certificate'=> 'BD'
+  ],
+
+  [
+    'name'=> 'MUSTANG',
+    'weight'=> '420 m/m²',
+    'composition'=> 'Nawierzchnia 100%PES Podkład 46% ACR 46% PES',
+    'width'=> '140 cm',
+    'abrasion'=> '103,000',
+    'resistance'=> 'BD',
+    'colorFatness'=> '6',
+    'colorFatnessRubbing'=> 'na mokro/wet BD, na sucho/dry 4',
+    'certificate'=> 'BD'
+  ],
+
+  [
+    'name'=> 'OPIUM',
+    'weight'=> '330 m/m²',
+    'composition'=> '100% PES',
+    'width'=> '145 cm',
+    'abrasion'=> '15,000',
+    'resistance'=> 'BD',
+    'colorFatness'=> '3-4',
+    'colorFatnessRubbing'=> 'na mokro/wet BD, na sucho/dry 4',
+    'certificate'=> 'BD'
+  ],
+
+  [
+    'name'=> 'AKROPOL',
+    'weight'=> '320 m/m²',
+    'composition'=> '100% PES',
+    'width'=> '145 cm',
+    'abrasion'=> '35,000',
+    'resistance'=> 'BD',
+    'colorFatness'=> '6',
+    'colorFatnessRubbing'=> 'na mokro/wet BD, na sucho/dry 4',
+    'certificate'=> 'BD'
+  ],
+
+  [
+    'name'=> 'ARES',
+    'weight'=> '400 m/m²',
+    'composition'=> '100%PES',
+    'width'=> '145 cm',
+    'abrasion'=> '16,000',
+    'resistance'=> 'BD',
+    'colorFatness'=> '3-4',
+    'colorFatnessRubbing'=> 'na mokro/wet BD, na sucho/dry 4',
+    'certificate'=> 'BD'
+  ],
+
+  [
+    'name'=> 'ARIZONA',
+    'weight'=> '300 m/m²',
+    'composition'=> '100% PES',
+    'width'=> '145 cm',
+    'abrasion'=> '12,000',
+    'resistance'=> 'BD',
+    'colorFatness'=> '3-4',
+    'colorFatnessRubbing'=> 'na mokro/wet BD, na sucho/dry 4',
+    'certificate'=> 'BD'
+  ],
+
+  [
+    'name'=> 'ASPEN',
+    'weight'=> '420 m/m²',
+    'composition'=> '54% PES 48% ACR',
+    'width'=> '145 cm',
+    'abrasion'=> '8,000',
+    'resistance'=> 'BD',
+    'colorFatness'=> '3-4',
+    'colorFatnessRubbing'=> 'na mokro/wet BD, na sucho/dry 4',
+    'certificate'=> 'BD'
+  ],
+
+  [
+    'name'=> 'ASTON',
+    'weight'=> '400 m/m²',
+    'composition'=> '100%PES',
+    'width'=> '145 cm',
+    'abrasion'=> '35,000',
+    'resistance'=> 'BD',
+    'colorFatness'=> '6',
+    'colorFatnessRubbing'=> 'na mokro/wet BD, na sucho/dry 4',
+    'certificate'=> 'BD'
+  ],
+
+  [
+    'name'=> 'AVILLA',
+    'weight'=> '300 m/m²',
+    'composition'=> '100% PES',
+    'width'=> '142 cm',
+    'abrasion'=> '58,000',
+    'resistance'=> '5',
+    'colorFatness'=> '4-5',
+    'colorFatnessRubbing'=> 'na mokro/wet 4-5, 	na sucho/dry 4-5',
+    'certificate'=> 'Tak'
+  ],
+
+  [
+    'name'=> 'BAHAMA',
+    'weight'=> '270 m/m²',
+    'composition'=> '100% PES',
+    'width'=> '140 cm',
+    'abrasion'=> '58,000',
+    'resistance'=> '4-5',
+    'colorFatness'=> '3-4',
+    'colorFatnessRubbing'=> 'na mokro/wet 4-5, 	na sucho/dry 4-5',
+    'certificate'=> 'BD'
+  ],
+
+  [
+    'name'=> 'BAWARIA',
+    'weight'=> '347 m/m²',
+    'composition'=> '100% PES',
+    'width'=> '145 cm',
+    'abrasion'=> '35,000',
+    'resistance'=> 'BD',
+    'colorFatness'=> '4.',
+    'colorFatnessRubbing'=> 'na mokro/wet BD, na sucho/dry 4',
+    'certificate'=> 'BD'
+  ],
+
+  [
+    'name'=> 'BELLA',
+    'weight'=> '320 m/m²',
+    'composition'=> '100% PES',
+    'width'=> '140 cm',
+    'abrasion'=> '50,000',
+    'resistance'=> '5',
+    'colorFatness'=> 'BD',
+    'colorFatnessRubbing'=> 'na mokro/wet 4-5, na sucho/dry 4-5',
+    'certificate'=> 'TAK'
+  ],
+
+  [
+    'name'=> 'BORA',
+    'weight'=> '400 m/m²',
+    'composition'=> '100%PES',
+    'width'=> '145 cm',
+    'abrasion'=> '18,000',
+    'resistance'=> 'BD',
+    'colorFatness'=> '3-4',
+    'colorFatnessRubbing'=> 'na mokro/wet BD, na sucho/dry 4',
+    'certificate'=> 'BD'
+  ],
+
+  [
+    'name'=> 'BRIX',
+    'weight'=> '290 m/m²',
+    'composition'=> '100% PES',
+    'width'=> '140 cm',
+    'abrasion'=> '45,000',
+    'resistance'=> '4',
+    'colorFatness'=> '5',
+    'colorFatnessRubbing'=> 'na mokro/wet 4-5, 	na sucho/dry 3-4',
+    'certificate'=> 'BD'
+  ],
+
+  [
+    'name'=> 'CAIRO',
+    'weight'=> 'BD',
+    'composition'=> 'BD',
+    'width'=> 'BD',
+    'abrasion'=> '45,000',
+    'resistance'=> '4-5',
+    'colorFatness'=> 'BD',
+    'colorFatnessRubbing'=> 'na mokro/wet BD, na sucho/dry BD',
+    'certificate'=> 'BD'
+  ],
+
+  [
+    'name'=> 'CANDY',
+    'weight'=> '270 m/m²',
+    'composition'=> '100% PES',
+    'width'=> '145 cm',
+    'abrasion'=> '12,000',
+    'resistance'=> 'BD',
+    'colorFatness'=> '3-4',
+    'colorFatnessRubbing'=> 'na mokro/wet BD, na sucho/dry 4',
+    'certificate'=> 'BD'
+  ],
+
+  [
+    'name'=> 'CAPRI',
+    'weight'=> '300 m/m²',
+    'composition'=> '100% PES',
+    'width'=> '146 cm',
+    'abrasion'=> '15,000',
+    'resistance'=> 'BD',
+    'colorFatness'=> '6',
+    'colorFatnessRubbing'=> 'na mokro/wet BD, na sucho/dry 4',
+    'certificate'=> 'BD'
+  ],
+
+  [
+    'name'=> 'CAYENE',
+    'weight'=> '345 m/m²',
+    'composition'=> '90% PES 10% NYL',
+    'width'=> '146 cm',
+    'abrasion'=> '35,000',
+    'resistance'=> 'BD',
+    'colorFatness'=> '6',
+    'colorFatnessRubbing'=> 'na mokro/wet BD, na sucho/dry 4',
+    'certificate'=> 'BD'
+  ],
+
+  [
+    'name'=> 'CITY',
+    'weight'=> 'BD',
+    'composition'=> 'BD',
+    'width'=> 'BD',
+    'abrasion'=> '50,000',
+    'resistance'=> '4-5',
+    'colorFatness'=> 'BD',
+    'colorFatnessRubbing'=> 'na mokro/wet 4-5, na sucho/dry 4-5',
+    'certificate'=> 'BD'
+  ],
+
+  [
+    'name'=> 'DAKOTA',
+    'weight'=> '340 m/m²',
+    'composition'=> '100% PES',
+    'width'=> '145 cm',
+    'abrasion'=> '10,000',
+    'resistance'=> 'BD',
+    'colorFatness'=> '3-4',
+    'colorFatnessRubbing'=> 'na mokro/wet BD, na sucho/dry 4',
+    'certificate'=> 'BD'
+  ],
+
+  [
+    'name'=> 'FABIO',
+    'weight'=> '420 m/m²',
+    'composition'=> '46% PES 54% ACR',
+    'width'=> '145 cm',
+    'abrasion'=> '12,000',
+    'resistance'=> 'BD',
+    'colorFatness'=> '04-Mar',
+    'colorFatnessRubbing'=> 'na mokro/wet BD, na sucho/dry 4',
+    'certificate'=> 'BD'
+  ],
+
+  [
+    'name'=> 'FLORIDA',
+    'weight'=> '370 m/m²',
+    'composition'=> '100% PES',
+    'width'=> '145 cm',
+    'abrasion'=> '18,000',
+    'resistance'=> 'BD',
+    'colorFatness'=> '3-4',
+    'colorFatnessRubbing'=> 'na mokro/wet BD, na sucho/dry 4',
+    'certificate'=> 'BD'
+  ],
+
+  [
+    'name'=> 'FOTOPRINT',
+    'weight'=> 'BD',
+    'composition'=> '100% PES',
+    'width'=> 'BD',
+    'abrasion'=> '35,000',
+    'resistance'=> 'BD',
+    'colorFatness'=> '',
+    'colorFatnessRubbing'=> 'na mokro/wet 5, na sucho/dry 5',
+    'certificate'=> 'BD'
+  ],
+
+  [
+    'name'=> 'GRANADA',
+    'weight'=> '505 m/m²',
+    'composition'=> '100% PES',
+    'width'=> '145 cm',
+    'abrasion'=> '35,000',
+    'resistance'=> 'BD',
+    'colorFatness'=> '3-4',
+    'colorFatnessRubbing'=> 'na mokro/wet BD, na sucho/dry 4',
+    'certificate'=> 'BD'
+  ],
+
+  [
+    'name'=> 'GRANDE',
+    'weight'=> 'BD',
+    'composition'=> 'BD',
+    'width'=> 'BD',
+    'abrasion'=> '40,000',
+    'resistance'=> '4',
+    'colorFatness'=> '',
+    'colorFatnessRubbing'=> 'na mokro/wet BD, na sucho/dryBD',
+    'certificate'=> 'BD'
+  ],
+
+  [
+    'name'=> 'LIRA',
+    'weight'=> '320 m/m²',
+    'composition'=> '77% PES 23% ACR',
+    'width'=> '145 cm',
+    'abrasion'=> '10,000',
+    'resistance'=> 'BD',
+    'colorFatness'=> '3-4',
+    'colorFatnessRubbing'=> 'na mokro/wet BD, na sucho/dry 4',
+    'certificate'=> 'BD'
+  ],
+
+  [
+    'name'=> 'LONGER',
+    'weight'=> '395 m/m²',
+    'composition'=> '100% PES',
+    'width'=> '145 cm',
+    'abrasion'=> '35,000',
+    'resistance'=> 'BD',
+    'colorFatness'=> '4.',
+    'colorFatnessRubbing'=> 'na mokro/wet BD, na sucho/dry 4',
+    'certificate'=> 'BD'
+  ],
+
+  [
+    'name'=> 'LOP',
+    'weight'=> '330 m/m²',
+    'composition'=> '78% PES 22% ACR',
+    'width'=> '145 cm',
+    'abrasion'=> '10,000',
+    'resistance'=> 'BD',
+    'colorFatness'=> '3-4',
+    'colorFatnessRubbing'=> 'na mokro/wet BD, na sucho/dry 4-5',
+    'certificate'=> 'BD'
+  ],
+
+  [
+    'name'=> 'MACAO',
+    'weight'=> '380 m/m²',
+    'composition'=> '100%PES',
+    'width'=> '145 cm',
+    'abrasion'=> '18,000',
+    'resistance'=> 'BD',
+    'colorFatness'=> '3-4',
+    'colorFatnessRubbing'=> 'na mokro/wet BD, na sucho/dry 4',
+    'certificate'=> 'BD'
+  ],
+
+  [
+    'name'=> 'MADRYT',
+    'weight'=> '355 m/m²',
+    'composition'=> '100% PES',
+    'width'=> '145 cm',
+    'abrasion'=> '10,000',
+    'resistance'=> 'BD',
+    'colorFatness'=> '4.',
+    'colorFatnessRubbing'=> 'na mokro/wet BD, na sucho/dry 4',
+    'certificate'=> 'BD'
+  ],
+
+  [
+    'name'=> 'MERIDA',
+    'weight'=> '320 m/m²',
+    'composition'=> '100% PES',
+    'width'=> '140 cm',
+    'abrasion'=> '45,000',
+    'resistance'=> '4-5',
+    'colorFatness'=> '',
+    'colorFatnessRubbing'=> 'na mokro/wet 4-5, na sucho/dry 5',
+    'certificate'=> 'BD'
+  ],
+
+  [
+    'name'=> 'MONACO',
+    'weight'=> '345 m/m²',
+    'composition'=> '100%PES',
+    'width'=> '145 cm',
+    'abrasion'=> '8,000',
+    'resistance'=> 'BD',
+    'colorFatness'=> '3-4',
+    'colorFatnessRubbing'=> 'na mokro/wet BD, na sucho/dry 4',
+    'certificate'=> 'BD'
+  ],
+
+  [
+    'name'=> 'OPAL',
+    'weight'=> '380 m/m²',
+    'composition'=> '100%PES',
+    'width'=> '145 cm',
+    'abrasion'=> '35,000',
+    'resistance'=> 'BD',
+    'colorFatness'=> '3-4',
+    'colorFatnessRubbing'=> 'na mokro/wet BD, na sucho/dry 4',
+    'certificate'=> 'BD'
+  ],
+
+  [
+    'name'=> 'PORTO',
+    'weight'=> '335 m/m²',
+    'composition'=> '100% PES',
+    'width'=> '145 cm',
+    'abrasion'=> '16,000',
+    'resistance'=> 'BD',
+    'colorFatness'=> '3-4',
+    'colorFatnessRubbing'=> 'na mokro/wet BD, na sucho/dry 4',
+    'certificate'=> 'BD'
+  ],
+
+  [
+    'name'=> 'SAFARI PIK',
+    'weight'=> '470 m/m²',
+    'composition'=> 'Nawierzchnia 100% PES Podkład 90%PES 10%CO',
+    'width'=> '146 cm',
+    'abrasion'=> '35,000',
+    'resistance'=> 'BD',
+    'colorFatness'=> '6',
+    'colorFatnessRubbing'=> 'na mokro/wet BD, na sucho/dry 4',
+    'certificate'=> 'BD'
+  ],
+
+  [
+    'name'=> 'SAFARI',
+    'weight'=> '340 m/m²',
+    'composition'=> 'Nawierzchnia100% PES Podkład 90% PES 10% CO',
+    'width'=> '146 cm',
+    'abrasion'=> '35,000',
+    'resistance'=> 'BD',
+    'colorFatness'=> '6.',
+    'colorFatnessRubbing'=> 'na mokro/wet BD, na sucho/dry 4',
+    'certificate'=> 'BD'
+  ],
+
+  [
+    'name'=> 'SEVILLA',
+    'weight'=> '375 m/m²',
+    'composition'=> '100% PES',
+    'width'=> '145 cm',
+    'abrasion'=> '35,000',
+    'resistance'=> 'BD',
+    'colorFatness'=> '3-4',
+    'colorFatnessRubbing'=> 'na mokro/wet BD, na sucho/dry 4',
+    'certificate'=> 'BD'
+  ],
+
+  [
+    'name'=> 'TOPAZ',
+    'weight'=> '370 m/m²',
+    'composition'=> '100%PES',
+    'width'=> '145 cm',
+    'abrasion'=> '35,000',
+    'resistance'=> 'BD',
+    'colorFatness'=> '3-4',
+    'colorFatnessRubbing'=> 'na mokro/wet BD, na sucho/dry 4',
+    'certificate'=> 'BD'
+  ],
+
+  [
+    'name'=> 'TORNADO',
+    'weight'=> 'BD',
+    'composition'=> '100% PES',
+    'width'=> 'BD',
+    'abrasion'=> '30,000',
+    'resistance'=> 'BD',
+    'colorFatness'=> '',
+    'colorFatnessRubbing'=> 'na mokro/wet 4	, na sucho/dry 4',
+    'certificate'=> 'BD'
+  ]
+]
+
