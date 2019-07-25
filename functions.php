@@ -89,7 +89,7 @@ add_theme_support( 'settings', array(
 
 /* translations for polylang */
 
-if (function_exists(pll_register_string)) {
+if (function_exists('pll_register_string')) {
   // footer
   pll_register_string('footer-copy', 'Copyright &copy; 2016 Artmeb. All Rights Reserved. Materials can be copied or downloaded only after permision from Artmeb.', 'Stopka');
   pll_register_string('footer-made-by', 'Made by', 'Stopka');
@@ -280,7 +280,7 @@ function woocommerce_support() {
   add_theme_support( 'woocommerce' );
 };
 if ( class_exists( 'WooCommerce' ) ) {
-  add_action('init', start_filter_session, 1);
+  add_action('init', 'start_filter_session', 1);
   add_filter( 'woocommerce_enqueue_styles', '__return_empty_array' );
 
   add_filter( 'loop_shop_per_page', 'new_loop_shop_per_page', 20 );

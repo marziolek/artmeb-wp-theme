@@ -30,7 +30,7 @@ echo wc_get_stock_html( $product );
 if ( $product->is_in_stock() ) : ?>
 
 	<?php do_action( 'woocommerce_before_add_to_cart_form' ); ?>
-
+<!--
 	<form class="cart" method="post" enctype='multipart/form-data'>
 		<?php
 			/**
@@ -63,8 +63,8 @@ if ( $product->is_in_stock() ) : ?>
 			*/
 			do_action( 'woocommerce_after_add_to_cart_button' );
 			?>
-	</form>
-	<p>Ilość <strong>1</strong> oznacza <strong>0.5mb</strong> materiału. Przykładowo, aby kupić <strong>10mb</strong> należy wybrać ilość <strong>20</strong></p>
+	</form> 
+	<p>Ilość <strong>1</strong> oznacza <strong>0.5mb</strong> materiału. Przykładowo, aby kupić <strong>10mb</strong> należy wybrać ilość <strong>20</strong></p> -->
 
 	<?php do_action( 'woocommerce_after_add_to_cart_form' ); ?>
 

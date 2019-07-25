@@ -64,7 +64,6 @@ get_header( 'shop' ); ?>
       ?>
 
       <div id="primary" class="col-xs-12 col-md-9 col-md-pull-3 woocommerce-primary">
-
         <?php if ( have_posts() ) : ?>
 
           <?php

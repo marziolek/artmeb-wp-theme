@@ -16,7 +16,7 @@
     <?php the_content(); ?>
   </div>
   <div class="container">
-    <section  class="home-page-section-polecane">
+    <!-- <section  class="home-page-section-polecane">
       <?php if (get_field('strona-glowna-slider-polecane')) : ?>
       <h1><?php if (get_field('strona-glowna-naglowek-polecane')) { the_field('strona-glowna-naglowek-polecane'); } ?></h1>
       <div class="home-page-recommended">
@@ -24,40 +24,45 @@
           <ul class="slides">
 
             <?php
-            //$polecane = new WP_Query(array ( 'cat_id' => $lang_cat_id, 'posts_per_page' => -1 ));
-            //$polecane = new WP_Query(array ( 'category_name' => 'Polecane', 'posts_per_page' => -1 ));
-            $polecane = get_posts(array(
-              'category' => 63, 
-              'posts_per_page' => -1
+            // $polecane = new WP_Query(array ( 'cat_id' => $lang_cat_id, 'posts_per_page' => -1 ));
+            // $polecaneCatName = new WP_Query(array ( 'category_name' => 'Polecane', 'posts_per_page' => -1 ));
+            $polecana_kat = get_field('polecana_kategoria');
+            $polecane = new WP_Query(array(
+              'post_type' => 'product',
+              'posts_per_page' => 10,
+              'tax_query' => array(
+                array (
+                    'taxonomy' => 'product_cat',
+                    'field' => 'term_id',
+                    'terms' => $polecana_kat[0],
+                    'operator' => 'IN'
+                  )
+                ), 
             ));
-
-
+            
             //while ($polecane->have_posts()) : $polecane->the_post();
-            foreach($polecane as $pol) {
-
-              $categories = wp_get_post_categories($pol->ID); 
+            // foreach($polecane as $pol) {
               
-              foreach($categories as $cats) {
-                $cat = get_category($cats);
-                $parentCatId = $cat->parent;
-                if ($parentCatId) {
-                  $catImg = category_image_src( array('term_id' => $cat->term_id ), false );
-                  if ($catImg) : ?>
+            if ($polecane->have_posts()) {
+              $posts = $polecane->posts;
 
-            <li>
-              <a href="<?php echo get_category_link($cat->term_id) ?>" class="square-material-item">
-                <img src="<?php echo $catImg; ?>" alt="<?php echo $parentCategory ?>" class="img-responsive">
-                <div class="square-material-item-gradient"></div>
-                <div class="square-material-item-name"><span><?php echo $cat->name; ?></span></div>
-              </a>
-            </li>
+              foreach($posts as $p) {
+                $polID = $p->ID;
+                $single_product = wc_get_product($p);
+                // var_dump($single_product);
+              ?>
+              <li>
+                <a href="<?php echo $p->guid; ?>" class="square-material-item">
+                  <?php echo $single_product->get_image(false, array('class' => 'img-responsive')); ?>
+                  <div class="square-material-item-gradient"></div>
+                  <div class="square-material-item-name"><span><?php echo $single_product->get_title(); ?></span></div>
+                </a>
+              </li>
 
-            <?php 
-                  endif;
-                  break;
+              <?php 
                 };
-              };
-            }
+                wp_reset_postdata();
+              }
             ?>
           </ul>
         </div>
@@ -66,13 +71,13 @@
       endif; 
       wp_reset_postdata();
       ?>
-    </section>
+    </section> -->
     <section class="home-page-section-promotion-event">
       <?php
       if ($promotion = get_field('strona-glowna-promocja')) : ?>
       <article class="home-page-section-promotion">
-        <h1>Promocja</h1>
-        <?php echo $promotion; ?>      
+        <h1>Oferta tygodnia</h1>
+        <?php echo $promotion; ?>
       </article>
       <?php endif; ?>
       <?php

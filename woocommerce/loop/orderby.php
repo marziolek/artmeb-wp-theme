@@ -21,7 +21,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 ?>
-<form class="woocommerce-ordering" method="get">
+<!-- <form class="woocommerce-ordering" method="get">
   <?php foreach ( $catalog_orderby_options as $id => $name ) : ?>
     <label for="<?php echo esc_attr( $id ); ?>" <?php if (selected( $orderby, $id )) : ?> class="active"<?php endif; ?>>
       <span><?php echo esc_html( $name ); ?></span>
@@ -29,4 +29,4 @@ if ( ! defined( 'ABSPATH' ) ) {
     </label>
   <?php endforeach; ?>
 	<?php wc_query_string_form_fields( null, array( 'orderby', 'submit' ) ); ?>
-</form>
+</form> -->

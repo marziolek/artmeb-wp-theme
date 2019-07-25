@@ -36,7 +36,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	 }
 ?>
 
-<div id="product-<?php the_ID(); ?>" <?php post_class('clearfix'); ?>>
+<div id="product-<?php the_ID(); ?>" <?php post_class('clearfix container'); ?>>
 
 	<?php
 		/**

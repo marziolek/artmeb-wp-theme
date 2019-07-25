@@ -30,67 +30,55 @@ get_header( 'shop' ); ?>
 		 * @hooked woocommerce_breadcrumb - 20
 		 * @hooked WC_Structured_Data::generate_website_data() - 30
 		 */
-		do_action( 'woocommerce_before_main_content' );
+    do_action( 'woocommerce_before_main_content' );
 	?>
 
     <header class="woocommerce-products-header">
+    <!-- 
+      <?php if ( apply_filters( 'woocommerce_show_page_title', true ) ) : ?>
 
-		<?php if ( apply_filters( 'woocommerce_show_page_title', true ) ) : ?>
+        <h1 class="woocommerce-products-header__title page-title"><?php woocommerce_page_title(); ?></h1>
 
-			<h1 class="woocommerce-products-header__title page-title"><?php woocommerce_page_title(); ?></h1>
-
-		<?php endif; ?>
-
-		<?php
+      <?php endif; ?>
+    -->
+    
+    <?php
 			/**
 			 * woocommerce_archive_description hook.
 			 *
 			 * @hooked woocommerce_taxonomy_archive_description - 10
 			 * @hooked woocommerce_product_archive_description - 10
 			 */
-			do_action( 'woocommerce_archive_description' );
+      do_action( 'woocommerce_archive_description' );
 		?>
 
     </header>
 
-    <div class="row woocommerce-primary-and-secondary">
-      <?php
-        /**
-        * woocommerce_sidebar hook.
-        *
-        * @hooked woocommerce_get_sidebar - 10
-        */
-        do_action( 'woocommerce_sidebar' );
-      ?>
+    <div class="container">
+      <div class="row woocommerce-primary-and-secondary">
+        <?php
+          /**
+          * woocommerce_sidebar hook.
+          *
+          * @hooked woocommerce_get_sidebar - 10
+          */
+          do_action( 'woocommerce_sidebar' );
+        ?>
 
-      <div id="primary" class="col-xs-12 col-md-9 col-md-pull-3 woocommerce-primary">
+        <div id="primary" class="col-xs-12 col-md-9 col-md-pull-3 woocommerce-primary">
+          <?php if ( have_posts() ) : ?>
+            <?php
+              /**
+              * woocommerce_before_shop_loop hook.
+              *
+              * @hooked wc_print_notices - 10
+              * @hooked woocommerce_result_count - 20
+              * @hooked woocommerce_catalog_ordering - 30
+              */
+              do_action( 'woocommerce_before_shop_loop' );
+            ?>
 
-        <?php if ( have_posts() ) : ?>
-
-          <?php if (!is_product_category()) : ?>
-            <div class="row shop-bg">
-              <div class="col-xs-12 col-sm-5">
-                <div class="shop-teaser">
-                  <span class="shop-icon--top"></span>
-                  <p>Zapraszamy do naszego sklepu internetowego. <br>W naszej ofercie wyselekcjonowaliśmy wybór najlepszych tkanin. Z myślą o Państwa wygodzie dostępna jest możliwość zakupu online naszych produktów.</p>
-                  <span class="shop-icon--bottom"></span>
-                </div>
-              </div>
-            </div>
-          <?php endif; ?>
-
-          <?php
-            /**
-            * woocommerce_before_shop_loop hook.
-            *
-            * @hooked wc_print_notices - 10
-            * @hooked woocommerce_result_count - 20
-            * @hooked woocommerce_catalog_ordering - 30
-            */
-            do_action( 'woocommerce_before_shop_loop' );
-          ?>
-
-          <?php woocommerce_product_loop_start(); ?>
+            <?php woocommerce_product_loop_start(); ?>
 
             <?php woocommerce_product_subcategories(); ?>
 
@@ -109,33 +97,33 @@ get_header( 'shop' ); ?>
 
             <?php endwhile; // end of the loop. ?>
 
-          <?php woocommerce_product_loop_end(); ?>
+            <?php woocommerce_product_loop_end(); ?>
 
-          <?php
-            /**
-            * woocommerce_after_shop_loop hook.
-            *
-            * @hooked woocommerce_pagination - 10
-            */
-            do_action( 'woocommerce_after_shop_loop' );
-          ?>
+            <?php
+              /**
+              * woocommerce_after_shop_loop hook.
+              *
+              * @hooked woocommerce_pagination - 10
+              */
+              do_action( 'woocommerce_after_shop_loop' );
+            ?>
 
+          <?php elseif ( ! woocommerce_product_subcategories( array( 'before' => woocommerce_product_loop_start( false ), 'after' => woocommerce_product_loop_end( false ) ) ) ) : ?>
+
+            <?php
+              /**
+               * woocommerce_no_products_found hook.
+               *
+               * @hooked wc_no_products_found - 10
+               */
+              do_action( 'woocommerce_no_products_found' );
+            ?>
+
+          <?php endif; ?>
+          
         </div>
       </div>
-
-		<?php elseif ( ! woocommerce_product_subcategories( array( 'before' => woocommerce_product_loop_start( false ), 'after' => woocommerce_product_loop_end( false ) ) ) ) : ?>
-
-			<?php
-				/**
-				 * woocommerce_no_products_found hook.
-				 *
-				 * @hooked wc_no_products_found - 10
-				 */
-				do_action( 'woocommerce_no_products_found' );
-			?>
-
-		<?php endif; ?>
-
+    </div>
 	<?php
 		/**
 		 * woocommerce_after_main_content hook.

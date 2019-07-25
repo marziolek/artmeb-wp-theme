@@ -13,15 +13,7 @@
 
 <div id="post-<?php the_ID(); ?>" <?php post_class('about-page'); ?>>
   <div class="container">
-    <h1><?php the_title(); ?></h1>
-    <div class="row">
-      <div class="col-md-7">
-        <?php the_content(); ?>
-      </div>
-      <div class="col-md-5">
-        <?php if ( has_post_thumbnail() ) { the_post_thumbnail('full', array('class' => 'img-responsive')); } ?>
-      </div>
-    </div>
+    <?php the_content(); ?>
   </div>
 </div>
 <!-- / post -->

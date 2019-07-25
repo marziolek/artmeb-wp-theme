@@ -21,7 +21,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="<?php bloginfo( 'description' ); ?>" />
 
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Lato:400,300,700&subset=latin,cyrillic-ext,latin-ext,cyrillic' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap&subset=latin-ext" rel="stylesheet">
   <?php
   wp_enqueue_style( 'main', get_template_directory_uri() . '/stylesheets/main.css' ); 
   ?>
@@ -61,8 +61,8 @@
     <nav class="navigation-main">
       <div class="container">
         <a href="<?php echo bloginfo('home'); ?>" class="navigation-main-logo">
-          <img src="<?php bloginfo('template_directory')?>/images/logo-icon-artmeb.jpg" width="115" height="85" class="navigation-main-logo-img icon" />
-          <img src="<?php bloginfo('template_directory')?>/images/logo-text-artmeb.svg" width="205" height="54" class="navigation-main-logo-img" />
+          <img src="<?php bloginfo('template_directory')?>/images/logo-icon-artmeb.jpg" width="85" height="63" class="navigation-main-logo-img icon" />
+          <img src="<?php bloginfo('template_directory')?>/images/logo-text-artmeb.svg" width="165" height="43" class="navigation-main-logo-img" />
         </a>
         <?php do_action( 'wp_light_head' ); ?>
       </div>

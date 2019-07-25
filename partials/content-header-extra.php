@@ -25,7 +25,7 @@
         <span class="icon-email"></span>
         <span><?php the_field('e-mail'); ?></span>
       </span>
-      <ul class="horizontal header-extra-languages"></ul>
+      <?php echo do_shortcode('[google-translator]'); ?>
     </div>
   </div>
 </div>

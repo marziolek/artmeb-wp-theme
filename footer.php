@@ -107,6 +107,7 @@ if ($postFilterData['clearFilters'] == 'false') {
     </div>
   </div>
   <div class="container">
+    <h2 class="footer-heading"><?php _e('U nas znajdziecie ofertę firm', 'woocommerce'); ?></h2>
     <ul class="footer-logos">
       <li class="footer-logos--item">
         <img src="<?php echo get_bloginfo('template_directory') . '/images/logo-fibero.svg'; ?>" alt="fibero logo" width="207" height="97" class="img-responsive">
