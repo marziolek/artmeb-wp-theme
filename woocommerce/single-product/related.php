@@ -23,10 +23,16 @@ if ( $related_products ) : ?>
 
 	<section class="container related products">
 
-		<h2><?php esc_html_e( 'Related products', 'woocommerce' ); ?></h2>
+		<h2><?php esc_html_e( 'Inne kolory', 'woocommerce' ); ?></h2>
 
 		<?php woocommerce_product_loop_start(); ?>
 
+			<?php
+			// $args = array(
+			// 	'post_type' => 'product',
+			// 	''
+			// );
+			// $related_products = new WP_Query($args); ?>
 			<?php foreach ( $related_products as $related_product ) : ?>
 
 				<?php

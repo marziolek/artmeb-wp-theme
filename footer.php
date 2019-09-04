@@ -106,7 +106,7 @@ if ($postFilterData['clearFilters'] == 'false') {
       </div>
     </div>
   </div>
-  <div class="container">
+  <!--<div class="container">
     <h2 class="footer-heading"><?php _e('U nas znajdziecie ofertę firm', 'woocommerce'); ?></h2>
     <ul class="footer-logos">
       <li class="footer-logos--item">
@@ -122,10 +122,10 @@ if ($postFilterData['clearFilters'] == 'false') {
         <img src="<?php echo get_bloginfo('template_directory') . '/images/logo-toccare.jpg'; ?>" alt="toccare logo" width="270" height="53" class="img-responsive">
       </li>
     </ul>
-  </div>
+  </div>-->
   <div class="container medium footer-copyrights">
     <p>
-      <?php _e('Copyright &copy; 2016 Artmeb. All Rights Reserved. Materials can be copied or downloaded only after permision from Artmeb.'); ?>
+      Copyright &copy; <?php echo date('Y'); ?> Artmeb. Wszystkie prawa zastrzeżone. Zdjęcia materiałów mogą być kopiowane i pobierane jedynie za zgodą firmy Artmeb.
       <span class="footer-copyrights-link"><?php _e('Made by'); ?> <a href="http://www.studio4u.eu/" target="_blank"><strong>Studio4U</strong></a></span>
     </p>
   </div>

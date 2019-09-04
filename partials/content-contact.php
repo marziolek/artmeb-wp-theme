@@ -36,7 +36,9 @@
               <p><a href="mailto:<?php echo $contactCompanyE; ?>"><?php echo $contactCompanyE; ?></a></p>
             <?php endif; ?>
             <h1 class="localization-title"><?php _e('Lokalizacja'); ?></h1>
-            <img src="<?php echo get_template_directory_uri(); ?>/images/pages/map.jpg" alt="mapa" class="contact-map">
+            <a href="https://goo.gl/maps/uJggshauDS2tSzJXA" target="_blank">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/pages/map.jpg" alt="mapa" class="contact-map">
+            </a>
           </div>
           <?php if ($contactForm = get_field('formularz_kontaktowy')) : ?>
             <div class="col-md-7">

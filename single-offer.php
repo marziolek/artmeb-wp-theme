@@ -12,6 +12,4 @@ the_post();
 ?>
 
 <?php get_template_part( 'partials/content-offer' ); ?>
-
-<?php ; ?>
 <?php get_footer();

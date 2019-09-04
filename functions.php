@@ -357,3 +357,36 @@ if ( class_exists( 'WooCommerce' ) ) {
     return $keys;
   }
 }
+
+add_filter( 'loop_shop_per_page', 'bbloomer_redefine_products_per_page', 9999 );
+ function bbloomer_redefine_products_per_page( $per_page ) {
+  $per_page = 18;
+  return $per_page;
+}
+
+/* Add Show All Products to Woocommerce Shortcode */
+function woocommerce_shortcode_display_all_products($args) {
+  if(strtolower(@$args['post__in'][0])=='all') {
+    global $wpdb;
+    $args['post__in'] = array();
+    $products = $wpdb->get_results("SELECT ID FROM ".$wpdb->posts." WHERE `post_type`='product'",ARRAY_A);
+    foreach($products as $k => $v) { $args['post__in'][] = $products[$k]['ID']; }
+  }
+  return $args;
+}
+add_filter('woocommerce_shortcode_products_query', 'woocommerce_shortcode_display_all_products');
+
+if (function_exists('acf_add_options_page')) {
+  acf_add_options_page('Opcje');
+}
+
+add_filter( 'woocommerce_output_related_products_args', 'related_products_args', 20 );
+function related_products_args( $args ) { 
+  $args = wp_parse_args( array( 'posts_per_page' => 999, 'columns' => 6, 'orderby' => 'title', 'order' => 'ASC' ), $args );
+  return $args;
+};
+
+add_filter( 'woocommerce_product_related_posts_relate_by_category', 'relate_by_category', 20);
+function relate_by_category() {
+  return false;
+};

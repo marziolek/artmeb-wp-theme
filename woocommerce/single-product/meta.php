@@ -40,7 +40,7 @@ global $product;
 
   <?php
     $attributes = get_the_terms( $product->id, 'pa_piktogram' );
-    if (sizeof($attributes)) {
+    if ($attributes && sizeof($attributes)) {
       echo '<ul class="product-pictograms">';
       foreach ($attributes as $term) {
         $term_html = '<li class="wc-layered-nav-term pictograms-filter">';

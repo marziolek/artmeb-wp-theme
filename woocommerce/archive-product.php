@@ -65,7 +65,22 @@ get_header( 'shop' ); ?>
           do_action( 'woocommerce_sidebar' );
         ?>
 
-        <div id="primary" class="col-xs-12 col-md-9 col-md-pull-3 woocommerce-primary">
+        <div id="primary" class="col-xs-12 woocommerce-primary">
+          <?php if ( is_shop() ) : ?>
+            <?php
+              $pelna_oferta = get_field('pelna_oferta_obraz_wyrozniajacy', 'option');
+              if (!$pelna_oferta) {
+                $pelna_oferta = 'http://artmeb.test/wp-content/uploads/2018/09/Palmas-Velvet-25572-300x300.jpg';
+              }
+            ?>
+            <div class="product-category__all-wrapper">
+              <div class="product-category product product-category__all">
+                <a href="http://artmeb.test/oferta/wszystko">
+                  <div class="product-category__all-image" style="background-image: url(<?php echo $pelna_oferta; ?>);"></div>
+                  <h2 class="woocommerce-loop-category__title">Pełna oferta</h2>
+                </a>
+              </div>
+          <?php endif; ?>
           <?php if ( have_posts() ) : ?>
             <?php
               /**
@@ -120,7 +135,9 @@ get_header( 'shop' ); ?>
             ?>
 
           <?php endif; ?>
-          
+          <?php if ( is_shop() ) : ?>
+            </div>
+          <?php endif; ?>
         </div>
       </div>
     </div>

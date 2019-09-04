@@ -5,7 +5,8 @@
  * @package WordPress
  * @subpackage WPized_Light
  */
-?>
+
+ /*
 
 
 <div <?php post_class('header-extra'); ?>>
